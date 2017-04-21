@@ -11,7 +11,7 @@ public class SelectionSort {
 
 	public static void sort (Comparable[] a) {
 		int len = a.length;
-		for (int i = 0; i < len-1; i++) {
+		for (int i = 0; i < len; i++) {
 			int min = i;
 			for (int j = i+1; j < len; j++) {
 				if (less(a[j], a[min])) {

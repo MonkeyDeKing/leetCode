@@ -35,5 +35,16 @@ public class InsertionSort extends AbstractSort {
 		}
 
 	}
+	
+	@SuppressWarnings("rawtypes")
+	public void sortDemo (Comparable[] a) {
+		int len = a.length;
+		for (int i = 1; i < len; i++) {
+			// insert a[i] into the sequence a[i-1], a[i-2],...
+			for (int j = i; j > 0 && less(a[j], a[j-1]); j--) {
+				swap(a, j, j-1);
+			}
+		}
+	}
 
 } // end of class
