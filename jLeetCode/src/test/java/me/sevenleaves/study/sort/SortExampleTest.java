@@ -17,7 +17,7 @@ public class SortExampleTest extends TestCase {
 		
 		SortExample.sort(a);
 		
-//		SortExample.show(a);
+		SortExample.show(a);
 		assertTrue(SortExample.isSorted(a));
 	}
 	
