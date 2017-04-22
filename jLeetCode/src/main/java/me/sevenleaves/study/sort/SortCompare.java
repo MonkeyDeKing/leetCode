@@ -25,6 +25,8 @@ public class SortCompare {
 		case Insertion: new InsertionSort().sort(a); break;
 		case Selection: SelectionSort.sort(a); break;
 		case Shell: new ShellSort().sort(a); break;
+		case MergeUD: new MergeSort().sortUpToDown(a); break;
+		case MergeDU: new MergeSort().sortDownToUp(a); break;
 		default:
 			break;
 		}
@@ -34,7 +36,7 @@ public class SortCompare {
 	}
 	
 	public enum SortAlg {
-		Insertion, Selection, Shell, Merge, Quick, Heap
+		Insertion, Selection, Shell, MergeUD, MergeDU, Quick, Heap
 	}
 	
 	public static Double[] randomInput (int length) {
