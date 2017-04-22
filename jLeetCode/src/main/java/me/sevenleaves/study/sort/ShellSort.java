@@ -32,6 +32,8 @@ public class ShellSort extends AbstractSort {
 					swap(a, j, j-h);
 				}
 			}
+			
+			h = h / 3; // 除法取整后，正好是递归的上一个数。
 		}
 	}
 	

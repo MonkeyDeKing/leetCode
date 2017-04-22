@@ -14,6 +14,8 @@ import org.apache.commons.lang3.time.StopWatch;
  */
 public class SortCompare {
 
+	private static Random rand = new Random(System.currentTimeMillis());
+	
 	@SuppressWarnings("rawtypes")
 	public static long time (SortAlg alg, Comparable[] a) {
 		StopWatch timer = new StopWatch();
@@ -22,6 +24,7 @@ public class SortCompare {
 		switch (alg) {
 		case Insertion: new InsertionSort().sort(a); break;
 		case Selection: SelectionSort.sort(a); break;
+		case Shell: new ShellSort().sort(a); break;
 		default:
 			break;
 		}
@@ -34,10 +37,18 @@ public class SortCompare {
 		Insertion, Selection, Shell, Merge, Quick, Heap
 	}
 	
+	public static Double[] randomInput (int length) {
+		Double[] a = new Double[length];
+		for (int i = 0; i < length; i++) {
+			a[i] = rand.nextDouble();
+		}
+		
+		return a;
+	}
+	
 	public static long timeRandomInput (SortAlg alg, int n, int t) {
 		long total = 0L;
 		Double[] a = new Double[n];
-		Random rand = new Random(System.currentTimeMillis());
 		// create t arrays that each length is n.
 		for (int i = 0; i < t; i++) { 
 			for (int j = 0; j < n; j++) {
