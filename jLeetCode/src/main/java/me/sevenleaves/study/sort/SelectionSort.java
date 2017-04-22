@@ -9,7 +9,7 @@ package me.sevenleaves.study.sort;
  */
 public class SelectionSort {
 
-	public static void sort (Comparable[] a) {
+	public static  void sort (Comparable[] a) {
 		int len = a.length;
 		for (int i = 0; i < len; i++) {
 			int min = i;
