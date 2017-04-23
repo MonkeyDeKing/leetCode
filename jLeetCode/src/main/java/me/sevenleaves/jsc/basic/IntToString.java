@@ -74,9 +74,34 @@ public class IntToString {
 	 * Convert a integer value to a string.
 	 */
 	public static String strValueOf (int i) {
+		StringBuilder sb = new StringBuilder("");
 		
+		boolean isNegative = false;
+		if (i < 0) {
+			isNegative = true;
+		}
 		
-		return null;
+		if (i == 0) {
+			sb.append("0");
+		}
+		
+		int t;
+		while (i != 0) {
+			t = i % 10;
+			if (t < 0) {
+				t = -t;
+			}
+			
+			sb.append(t);
+			
+			i = i / 10;
+		}
+		
+		if (isNegative) {
+			sb.append("-");
+		}
+		
+		return sb.reverse().toString();
 	}
 	
 } // end of class.

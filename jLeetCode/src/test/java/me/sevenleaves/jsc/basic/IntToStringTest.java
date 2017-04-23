@@ -24,6 +24,12 @@ public class IntToStringTest extends TestCase {
 	public void testIntValueOf3() throws Exception {
 		assertEquals(IntToString.intValueOf("0"), 0);
 	}
+	public void testIntValueOf4() throws Exception {
+		assertEquals(IntToString.intValueOf("-123"), -123);
+	}
+	public void testIntValueOf5() throws Exception {
+		assertEquals(IntToString.intValueOf("321"), 321);
+	}
 
 	/**
 	 * Test method for {@link me.sevenleaves.jsc.basic.IntToString#strValueOf(int)}.
@@ -36,6 +42,12 @@ public class IntToStringTest extends TestCase {
 	}
 	public void testStrValueOf3() {
 		assertEquals(IntToString.strValueOf(0), "0");
+	}
+	public void testStrValueOf4() {
+		assertEquals(IntToString.strValueOf(-123), "-123");
+	}
+	public void testStrValueOf5() {
+		assertEquals(IntToString.strValueOf(321), "321");
 	}
 
 } // end of class.
