@@ -30,5 +30,14 @@ public class InsertionSortTest extends TestCase {
 		assertTrue(ins.isSorted(a));
 		ins.show(a);
 	}
+	
+	public void testParamsSort () {
+		Double[] a = SortCompare.randomInput(1000);
+
+		InsertionSort alg = new InsertionSort();
+		alg.sort(a, 0, a.length);
+
+		assertTrue(alg.isSorted(a));
+	}
 
 } // end of the test case.
