@@ -20,7 +20,6 @@ public class BinarySearch {
 		int i = 0, j = a.length-1;
 		while (i <= j) {
 			int mid = (i + j) / 2;
-			
 			if (key == a[mid]) {
 				idx = mid;
 				break;

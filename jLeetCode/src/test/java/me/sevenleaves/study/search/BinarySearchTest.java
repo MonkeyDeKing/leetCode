@@ -33,6 +33,8 @@ public class BinarySearchTest extends TestCase {
 		assertEquals(39, idx);
 		idx = BinarySearch.search(49, a);
 		assertEquals(49, idx);
+		idx = BinarySearch.search(-49, a);
+		assertEquals(-1, idx);
 		
 	}
 
