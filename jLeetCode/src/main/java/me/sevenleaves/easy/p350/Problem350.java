@@ -10,7 +10,7 @@ import java.util.List;
 /**
  * @author Victor Young
  * @Todo: https://leetcode.com/problems/intersection-of-two-arrays-ii/#/description
- *
+ * Tag : Sort.
  */
 public class Problem350 {
 
