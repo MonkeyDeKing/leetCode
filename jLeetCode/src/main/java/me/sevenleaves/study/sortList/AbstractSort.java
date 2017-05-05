@@ -3,6 +3,8 @@
  */
 package me.sevenleaves.study.sortList;
 
+import java.util.Random;
+
 /**
  * @author Victor Young
  * @Todo: The root class of all simple sort algorithms on lists.
@@ -50,6 +52,19 @@ public abstract class AbstractSort {
 		}
 		
 		return true;
+	}
+	
+	public ListNode createList () {
+		Random rdm = new Random(System.currentTimeMillis());
+		ListNode head = new ListNode(rdm.nextInt());
+		
+		ListNode cur = head;
+		for (int i = 0; i < 10; i++) {
+			cur.next = new ListNode(rdm.nextInt());
+			cur = cur.next;
+		}
+		
+		return head;
 	}
 	
 } // end of class.
