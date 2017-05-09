@@ -55,12 +55,16 @@ public abstract class AbstractSort {
 	}
 	
 	public ListNode createList () {
+		return createList(10);
+	}
+	
+	public ListNode createList (int length) {
 		Random rdm = new Random(System.currentTimeMillis());
-		ListNode head = new ListNode(rdm.nextInt());
+		ListNode head = new ListNode(rdm.nextInt(100));
 		
 		ListNode cur = head;
-		for (int i = 0; i < 10; i++) {
-			cur.next = new ListNode(rdm.nextInt());
+		for (int i = 1; i < length; i++) {
+			cur.next = new ListNode(rdm.nextInt(100));
 			cur = cur.next;
 		}
 		
