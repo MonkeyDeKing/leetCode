@@ -14,6 +14,7 @@ public class QuickSort extends AbstractSort {
 	 * @see me.sevenleaves.study.sortList.AbstractSort#sort(me.sevenleaves.study.sortList.ListNode)
 	 */
 	@Override
+	@Deprecated
 	public void sort(ListNode head) {
 		ListNode tail = head;
 		while (tail.next != null) {
@@ -25,6 +26,10 @@ public class QuickSort extends AbstractSort {
 	
 	public void quickSort (ListNode beg, ListNode end) {
 		if (beg == null || end == null) {
+			return;
+		}
+		
+		if (beg == end) {
 			return;
 		}
 		
@@ -54,6 +59,8 @@ public class QuickSort extends AbstractSort {
 			}
 			
 			cur = cur.next;
+			if (cur == null)
+				break;
 		}
 		
 		beg.val = index.val;
