@@ -1,6 +1,3 @@
-/**
- * @author Victor Young
- */
 package me.sevenleaves.easy.p148;
 
 /**

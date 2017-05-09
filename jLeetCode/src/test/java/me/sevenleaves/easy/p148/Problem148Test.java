@@ -21,7 +21,13 @@ public class Problem148Test extends TestCase {
 	 * Test method for {@link me.sevenleaves.easy.p148.Problem148#sortList(me.sevenleaves.easy.p148.ListNode)}.
 	 */
 	public void testSortList() {
+//		ListNode head = alg.createList ();
+//		
+//		head = p.sortList(head);
+//
+//		boolean actual = alg.isSorted(head);
 		
+//		assertEquals(true, actual);
 	}
 
 } // end of class.
