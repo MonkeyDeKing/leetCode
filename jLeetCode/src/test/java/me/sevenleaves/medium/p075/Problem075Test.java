@@ -1,7 +1,7 @@
 /**
  * @author Victor Young
  */
-package me.sevenleavesmedium.p075;
+package me.sevenleaves.medium.p075;
 
 import junit.framework.TestCase;
 import me.sevenleaves.medium.p075.Problem075_v2;
