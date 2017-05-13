@@ -6,7 +6,7 @@ package me.sevenleaves.easy.p035;
 /**
  * @author Victor Young
  * @Todo: 35. Search Insert Position
- *	Medium.
+ *	Easy.
  *	https://leetcode.com/problems/search-insert-position/#/description
  */
 public class Problem35 {
