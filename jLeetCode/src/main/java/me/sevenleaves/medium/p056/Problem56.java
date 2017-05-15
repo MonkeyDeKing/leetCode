@@ -6,6 +6,8 @@ package me.sevenleaves.medium.p056;
 import java.util.ArrayList;
 import java.util.List;
 
+import me.sevenleaves.medium.Interval;
+
 /**
  * @author Victor Young
  * @Todo: 56. Merge Intervals

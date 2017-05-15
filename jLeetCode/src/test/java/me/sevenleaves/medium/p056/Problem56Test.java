@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import junit.framework.TestCase;
+import me.sevenleaves.medium.Interval;
 
 /**
  * @author Victor Young

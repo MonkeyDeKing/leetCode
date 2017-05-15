@@ -1,7 +1,7 @@
 /**
  * @author Victor Young
  */
-package me.sevenleaves.medium.p056;
+package me.sevenleaves.medium;
 
 /**
  * @author Victor Young
