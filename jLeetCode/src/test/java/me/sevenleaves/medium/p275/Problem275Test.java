@@ -1,19 +1,13 @@
 /**
  * @author Victor Young
  */
-package me.sevenleaves.medium.p274;
+package me.sevenleaves.medium.p275;
 
 import junit.framework.TestCase;
-import me.sevenleaves.medium.p274.Problem274;
 
-/**
- * @author Victor Young
- * @Todo: 
- *
- */
-public class Problem274Test extends TestCase {
+public class Problem275Test extends TestCase {
 
-	Problem274 p = new Problem274();
+	Problem275 p = new Problem275();
 
 	public void testHIndex01() {
 		int[] citations = {3, 0, 6, 1, 5};
