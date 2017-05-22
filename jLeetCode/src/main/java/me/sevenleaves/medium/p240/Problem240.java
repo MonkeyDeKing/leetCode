@@ -19,14 +19,15 @@ public class Problem240 {
     	int n = matrix[0].length;
     	
     	final int len = m * n - 1;
-    	int lo = 0, hi = len, mid, xy[];
+    	int lo = 0, hi = len, mid, row, col;
     	while (lo <= hi) {
     		mid = lo + (hi - lo) / 2;
-    		xy = map(mid, n);
+    		row = mid / n;
+    		col = mid % n;
     		
-    		if (target < matrix[xy[0]][xy[1]]) {
+    		if (target < matrix[row][col]) {
     			hi = mid - 1;
-    		} else if (target > matrix[xy[0]][xy[1]]) {
+    		} else if (target > matrix[row][col]) {
     			lo = mid + 1;
     		} else {
     			return true;
@@ -34,17 +35,6 @@ public class Problem240 {
     	}
     	
     	return false;
-    }
-    /*
-    private int map(int i, int j, final int n) {
-    	return i * n + j;
-    }*/
-    public int[] map(int idx, final int n) {
-    	int[] idxs = {-1, -1};
-    	idxs[0] = idx / n;
-    	idxs[1] = idx % n;
-    	
-    	return idxs;
     }
     
 	
