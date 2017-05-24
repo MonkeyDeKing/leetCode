@@ -36,6 +36,7 @@ public class Problem240 {
 		if (nums == null || nums.length == 0 || target < nums[0])
 			return false;
 		
+		
 		int mid;
 		while (lo <= hi) {
 			mid = lo + (hi - lo) / 2;
