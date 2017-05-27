@@ -1,12 +1,12 @@
 /**
  * @author Victor Young
  */
-package me.sevenleaves.medium.p154;
+package me.sevenleaves.hard.p154;
 
 /**
  * @author Victor Young
  * @Todo: 154. Find Minimum in Rotated Sorted Array II.
- * Medium.
+ * Hard.
  * https://leetcode.com/problems/find-minimum-in-rotated-sorted-array-ii/#/description
  */
 public class Problem154 {

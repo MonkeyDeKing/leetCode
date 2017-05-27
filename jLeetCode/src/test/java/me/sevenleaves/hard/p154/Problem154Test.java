@@ -1,7 +1,7 @@
 /**
  * @author Victor Young
  */
-package me.sevenleaves.medium.p154;
+package me.sevenleaves.hard.p154;
 
 import junit.framework.TestCase;
 
@@ -49,3 +49,4 @@ public class Problem154Test extends TestCase {
 		assertEquals(2, actual);
 	}
 }
+
